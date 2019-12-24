@@ -23,9 +23,9 @@ public class Main {
 		String holderName = input.nextLine();
 		
 		System.out.printf("Is there an initial deposit (y/n)? ");
-		char isInitialDeposit = input.next().charAt(0);
+		char response = input.next().charAt(0);
 		
-		if (isInitialDeposit == 'y' || isInitialDeposit == 'Y') {
+		if (response == 'y' || response == 'Y') {
 			System.out.print("Enter initial deposit value: ");
 			double depositValue = input.nextDouble();
 			account = new Account(accountNumber, holderName, depositValue);
